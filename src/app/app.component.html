@@ -1,0 +1,24 @@
+
+<div>
+
+
+  <button (click) = "toggleMenu()">toggle menu</button>
+
+  //only show, with ngIf using boolean. showVehicles needs to be a boolea nvalue in the component - app.component
+
+  <div *ngIf="showVehicles">
+
+    <a routerLink="/cars">Cars |</a> 
+    <a routerLink="/planes">Planes |</a>
+    <a routerLink="/trucks">trucks</a>
+    
+  </div> 
+  <div *ngIf="showHouses">
+
+    <a routerLink="/townhomes">Townhomes |</a> 
+    <a routerLink="/condos">Condos |</a>
+
+    
+  </div>
+  <router-outlet></router-outlet>
+</div>

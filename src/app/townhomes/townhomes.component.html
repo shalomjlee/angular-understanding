@@ -1,0 +1,18 @@
+<p>townhomes works!</p>
+
+<button (click)="makeGreen()">make green</button>
+<button (click)="makeRed()">make red</button>
+
+
+ngClass - needs class that is defined, green needs to be defined 
+based on isGreen logic, same for red. resolves to boolean - true or false.
+ngclass says it has bidning information based on conditional values inside keyvalue pairs
+with a css type as a key, with a boolean value that is evaluated in component.ts
+ngClass allows you to dynamically set css class of entity in runtime
+
+ngIf is like display none instead of visibility hidden. can set class to visibility to hidden
+
+
+<div class="mybox" [style.color] = "custom" [ngClass]="{green: isGreen, red: isRed}">
+    this is the box
+</div>

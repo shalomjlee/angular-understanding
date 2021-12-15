@@ -1,0 +1,15 @@
+<p>cars works!</p>
+Here are the cars
+
+make is instance variable - ngFor is a loop - loops through component it is placed on 
+
+<li  *ngFor="let make of makes">
+    {{make}}
+
+</li>
+
+
+<select >
+    <option *ngFor= "let make of makes" value={{make}}>{{make}}</option>
+
+</select>
